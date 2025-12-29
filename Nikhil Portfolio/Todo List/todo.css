@@ -1,0 +1,117 @@
+:root {
+    --bg-color: #f4f6f8; /* Very light cool grey */
+    --primary-color: #00BCD4; /* Cyan */
+    --secondary-color: #B9FBC0; /* Mint Green */
+    --light-bg: #E0F7FA; /* Light Blue/Cyan */
+    --text-color: #333;
+    --completed-color: #888;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligns content to the top */
+    min-height: 100vh;
+    margin: 20px 0;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+#todo-form {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+#task-input {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: 2px solid var(--light-bg);
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+#task-input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+#add-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+#add-button:hover {
+    background-color: #0097A7; /* Darker Cyan */
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+#todo-list li {
+    background: var(--light-bg);
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+/* Style for completed tasks */
+.completed {
+    background: var(--secondary-color) !important; /* Mint background for completed */
+    opacity: 0.7;
+}
+
+.completed span {
+    text-decoration: line-through;
+    color: var(--completed-color);
+}
+
+.task-text {
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: #FF5722; /* A warm contrast for the delete button */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+    background-color: #E64A19;
+}

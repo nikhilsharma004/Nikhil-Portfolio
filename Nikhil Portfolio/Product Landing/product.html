@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Product Landing Page</title>
+    <link rel="stylesheet" href="/Product Landing/product.css">
+</head>
+<body>
+
+    <header id="header">
+        <div class="logo">
+            <img id="header-img" src="logo.png" alt="Product Logo">
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+                <li><a class="nav-link" href="#pricing">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>The Product That Changes Everything</h1>
+            <p>A simple solution for complex problems.</p>
+            <form id="form" target="_blank" action="#">
+                <input 
+                    name="email" 
+                    id="email" 
+                    type="email" 
+                    placeholder="Enter your email address" 
+                    required
+                >
+                <input id="submit" type="submit" value="Get Started" class="btn">
+            </form>
+        </section>
+
+        <section id="features" class="container">
+            <div class="feature-item">
+                <i class="icon">🚀</i>
+                <div>
+                    <h2>Blazing Fast</h2>
+                    <p>Our product delivers results in milliseconds, saving you precious time every day.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <i class="icon">🔒</i>
+                <div>
+                    <h2>Highly Secure</h2>
+                    <p>We use industry-leading encryption to protect your data around the clock.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <i class="icon">💡</i>
+                <div>
+                    <h2>Intuitive Design</h2>
+                    <p>The interface is simple and easy to use, requiring zero training.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="container">
+            <h2>See It In Action</h2>
+            <iframe 
+                id="video" 
+                height="315" 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0" 
+                frameborder="0" 
+                allowfullscreen
+            ></iframe>
+        </section>
+
+        <section id="pricing" class="container">
+            <h2>Choose Your Plan</h2>
+            <div class="price-plans">
+                <div class="plan">
+                    <h3>Basic</h3>
+                    <h4>$9 / Month</h4>
+                    <ul>
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Limited Support</li>
+                    </ul>
+                    <button class="btn">Select</button>
+                </div>
+                <div class="plan">
+                    <h3>Pro</h3>
+                    <h4>$29 / Month</h4>
+                    <ul>
+                        <li>All Basic Features</li>
+                        <li>Feature 3</li>
+                        <li>Priority Support</li>
+                    </ul>
+                    <button class="btn">Select</button>
+                </div>
+                <div class="plan">
+                    <h3>Enterprise</h3>
+                    <h4>$99 / Month</h4>
+                    <ul>
+                        <li>All Pro Features</li>
+                        <li>Custom Integrations</li>
+                        <li>Dedicated Manager</li>
+                    </ul>
+                    <button class="btn">Select</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Awesome Product. | <a href="#">Privacy</a> | <a href="#">Terms</a></p>
+    </footer>
+
+    <script src="/Product Landing/product.js"></script>
+</body>
+</html>

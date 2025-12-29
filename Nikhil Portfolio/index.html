@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Nikhil Sharma</div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="/Nikhil Sharma.pdf" download="Nikhil Sharma.pdf">Resume</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Nikhil Sharma 👋</h1>
+            <p>A passionate Developer focused on Web Technologies .</p>
+            <a href="#portfolio" class="cta-button">View My Work</a>
+        </div>
+        
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-flex">
+            <div class="bio">
+                <p>I am a highly motivated technologist with a Master of Computer Applications (MCA), blending 1.7 years of experience as a System Engineer and Team Lead in fast-paced IT operations. My expertise is rooted in seamless system management, troubleshooting, and asset control using tools like Active Directory and BMC. I ensure robust operational environments and bring strong leadership to every technical challenge.</p>
+                <p>
+                    My technical skills blend systems knowledge with modern development. I am proficient in:
+                    <br>
+                    Languages:  HTML, CSS, JavaScript, Java(J2SE), Node.js.
+                    <br>
+                    Databases:  MongoDB, SQlite3.
+                    <br>
+                    Frameworks:  Bootstrap, Express.js.
+                    <br>
+                    OS & Tools:  Windows, Chrome OS, Active Directory and BMC.
+                </p>
+            <div class="profile-photo">
+                <img src="/Nikhil Profile Pic.png" alt="Your Profile Photo">
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Todo list</h3>
+                <p>This Dynamic To-Do List application, built using HTML5, CSS3, and JavaScript, showcases proficiency in DOM manipulation and event handling. It allows users to efficiently add, complete, and delete tasks within a clean, modern interface styled with a light cool color palette.</p>
+                <a href="/Todo List/todo.html" target="_blank">View Demo</a>
+            </div>
+            <div class="project-card">
+                <h3>Login Form</h3>
+                <p>This project builds a responsive and secure login form using HTML5 for structure, CSS3 for modern, adaptive styling, and JavaScript for client-side form validation and a dynamic "show password" toggle for enhanced user experience.</p>
+                <a href="/Login-Form/login.html" target="_blank">View Demo</a>
+            </div>
+            <div class="project-card">
+                <h3>Product Landing</h3>
+                <p>This project involves cloning a professional product landing page using HTML5 for semantic layout, CSS3 for a fully responsive design (utilizing Flexbox/Grid), and JavaScript for enhanced interactivity such as smooth scrolling and simple form validation on the email input. The focus is on mastering modern styling techniques and multi-section layouts.</p>
+                <a href="/Product Landing/product.html" target="_blank">View Demo</a>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <p>I'm always open to new opportunities. Send me a message!</p>
+        <br>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Nikhil Sharma. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/nikhil-sharma4" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/nikk.pndit" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://github.com/nikhilsharma004" target="_blank"><i class="fab fa-github"></i></a>
+
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
