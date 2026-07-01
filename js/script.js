@@ -90,7 +90,7 @@ const activeObserver = new IntersectionObserver(
 
 sections.forEach((section) => activeObserver.observe(section));
 
-const words = ["Java", "OOP", "DSA", "JavaScript", "modern UI"];
+const words = ["Java", "OOP", "DSA"];
 let wordIndex = 0;
 let charIndex = 0;
 let deleting = false;
