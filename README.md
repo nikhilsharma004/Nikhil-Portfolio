@@ -1,74 +1,61 @@
-# ShopWave
+# Nikhil Sharma — Portfolio
 
-ShopWave is a Java full-stack ecommerce project built with Spring Boot, Spring Security, Thymeleaf, Spring Data JPA, Hibernate, H2, and Maven.
+A personal portfolio website for Nikhil Sharma, an aspiring Java Full Stack Developer. Built as a single-page, responsive site with an animated hero section, typed-role effect, and a working contact form.
+
+**Live site:** https://nikhil-portfolio.vercel.app
 
 ## Features
 
-- Product catalog with search
-- Product category filtering
-- Product detail and deals pages
-- Session-based shopping cart
-- Quantity updates and cart removal
-- Database-backed user registration
-- Spring Security login/logout
-- BCrypt password hashing
-- Protected checkout and orders pages
-- Checkout form with validation
-- Order persistence in H2
-- Amazon-style responsive storefront UI
+- Animated particle/grain canvas background in the hero section
+- Typed-role text animation ("Java", "JavaScript", etc. cycling in the headline)
+- Responsive design with breakpoints for tablet and mobile
+- Sections: About, Skills, Projects, Experience, Contact
+- Downloadable resume (PDF)
+- Contact form powered by [formsubmit.co](https://formsubmit.co) — submissions are emailed directly, no backend required
+- Respects `prefers-reduced-motion` for accessibility
 
-## Security
+## Tech Stack
 
-- Registered users are stored in the `app_users` table.
-- Passwords are hashed using BCrypt before saving.
-- Login is handled by Spring Security using a custom `UserDetailsService`.
-- Checkout and order pages require authentication.
-- CSRF protection is enabled for form submissions.
+- HTML5
+- CSS3 (custom properties, responsive grid/flexbox layouts)
+- Vanilla JavaScript (canvas animation, typed text effect, form handling)
+- Deployed on [Vercel](https://vercel.com) with auto-deploy from GitHub
 
-## Run
+## Project Structure
 
-```powershell
-mvn spring-boot:run
+Nikhil-Portfolio/
+├── index.html          # Main page
+├── css/
+│   └── styles.css      # All styling
+├── js/
+│   └── script.js       # Animations, typed effect, form logic
+├── assets/
+│   ├── Nikhil_Resume.pdf
+│   └── nikhil-profile.png
+└── README.md
+
+## Running Locally
+
+Since this is a static site, no build tools are required. Either:
+
+1. Open `index.html` directly in a browser, or
+2. Use the included local preview script:
+```bash
+   node local-preview.cjs
 ```
 
-Then open:
+## Deployment
 
-```text
-http://localhost:8080
-```
+This project auto-deploys to Vercel on every push to the `main` branch. To deploy your own copy:
 
-The H2 database console is available at:
+1. Fork or clone this repo
+2. Import it into [Vercel](https://vercel.com) as a new project
+3. Framework preset: **Other** (static site, no build command needed)
+4. Deploy
 
-```text
-http://localhost:8080/h2-console
-```
+## Contact
 
-Use JDBC URL `jdbc:h2:mem:shopwavedb`, username `sa`, and an empty password.
+- Email: nikhilsharma3492@gmail.com
+- LinkedIn: [linkedin.com/in/nikhil-sharma4](https://linkedin.com/in/nikhil-sharma4)
+- GitHub: [github.com/nikhilsharma004](https://github.com/nikhilsharma004)
 
-## Test
-
-```powershell
-mvn test
-```
-
-The test suite verifies the catalog, CSS, login/register pages, protected checkout, product detail page, deals page, delivery page, cart flow, checkout flow, and orders page.
-
-## Resume Summary
-
-```text
-Developed a full-stack ecommerce web application using Java, Spring Boot, Spring MVC, Spring Security, Thymeleaf, Spring Data JPA, Hibernate, H2, and Maven with database-backed user registration, BCrypt password hashing, authentication, product catalog, cart management, checkout, and order tracking features.
-```
-
-## CSS Path
-
-The stylesheet is stored at:
-
-```text
-src/main/resources/static/css/styles.css
-```
-
-Spring Boot serves that file at:
-
-```text
-http://localhost:8080/css/styles.css
-```
